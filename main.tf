@@ -15,6 +15,24 @@ provider "azurerm" {
   features {}
 }
 
+### Variables ###
+variable "subscription_id" {
+    type = string
+}
+
+variable "client_id" {
+    type = string
+}
+
+variable "client_secret" {
+    type = string
+}
+
+variable "tenant_id" {
+    type = string
+}
+
+
 resource "azurerm_resource_group" "example" {
   name     = "my-resources"
   location = "East US"
